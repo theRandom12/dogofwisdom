@@ -3,7 +3,11 @@ var data=[
     "Never take salami from a stranger",
     "Don't sniff the butt of a dog you don't know",
     "You are important. Make sure to treat yourself with a nice bone every once in a while",
-    "Never question who the good boi is. It is always you"
+    "Never question who the good boi is. It is always you",
+    "If you don't recognize a bone then don't lick it",
+    "When times get tuff, just keep going \"ruff.\"",
+
+
 ]
 function sleep(milliseconds) {
     var start = new Date().getTime();
@@ -31,11 +35,14 @@ function randomWisdom(){
 }
 
 function setText(){
-    var wisdum=randomWisdom();
-
-
-    document.getElementById("wisdomText").innerHTML=wisdum;
-
+    let wisdum=randomWisdom();
+    let soFar="";
+    for(var i=0;i<wisdum.length;i++){
+        soFar=soFar+(wisdum[i])
+        document.getElementById("wisdomText").innerHTML=soFar;
+        sleep(2)
+    }
 }
 
 random_bg_color();
+document.addEventListener("click",setText);
