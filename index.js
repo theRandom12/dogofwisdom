@@ -1,4 +1,4 @@
-
+let prevData=""
 var data=[
     "Never take salami from a stranger",
     "Don't sniff the butt of a dog you don't know",
@@ -6,6 +6,10 @@ var data=[
     "Never question who the good boi is. It is always you",
     "If you don't recognize a bone then don't lick it",
     "When times get tuff, just keep going \"ruff.\"",
+    "If you feel like that poodle is staring at you like it's going to kill you, it is going to kill you. Poodles are monsters",
+    "Dogs are Pog",
+    "Only chew the slippers of those you hate",
+    "If your ball is too big for your mouth, it's not yours"
 
 
 ]
@@ -36,6 +40,12 @@ function randomWisdom(){
 
 function setText(){
     let wisdum=randomWisdom();
+    if (wisdum==prevData){
+        while(wisdum==prevData){
+            wisdum=randomWisdom();
+        }
+    }
+    prevData=wisdum;
     let soFar="";
     for(var i=0;i<wisdum.length;i++){
         soFar=soFar+(wisdum[i])
