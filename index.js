@@ -8,7 +8,7 @@ var data=[
     "When times get tuff, just keep going \"ruff.\"",
     "If you feel like that poodle is staring at you like it's going to kill you, it is going to kill you. Poodles are monsters",
     "Only chew the slippers of those you hate",
-    "If your ball is too big for your mouth, it's not yours"
+    "If your toy is too big for your mouth, it's not yours"
 
 
 ]
